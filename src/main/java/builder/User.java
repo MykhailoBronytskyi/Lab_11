@@ -1,0 +1,19 @@
+package builder;
+
+import lombok.Builder;
+import lombok.Singular;
+import lombok.ToString;
+
+import java.util.List;
+
+@Builder @ToString
+public class User {
+    private String first_name;
+    private String last_name;
+    @Singular(value = "education")
+
+    private List<String> educations;
+    private int age;
+    private int weight;
+    private String gender;
+}
