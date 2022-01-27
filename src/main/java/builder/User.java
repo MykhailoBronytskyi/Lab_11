@@ -1,12 +1,13 @@
 package builder;
 
 import lombok.Builder;
+import lombok.Getter;
 import lombok.Singular;
 import lombok.ToString;
 
 import java.util.List;
 
-@Builder @ToString
+@Builder @ToString @Getter
 public class User {
     private String first_name;
     private String last_name;

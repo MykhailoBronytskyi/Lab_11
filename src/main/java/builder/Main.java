@@ -10,8 +10,9 @@ public class Main {
                 .education("UCU bachelor")
                 .last_name("Dobosevych")
                 .build();
-        System.out.println();
-        user.builder().education("sdfsfd").build();
+        System.out.println(user);
+        System.out.println(user.getAge());
+        System.out.println(User.builder().education("sdfsfd").build());
 
     }
 }

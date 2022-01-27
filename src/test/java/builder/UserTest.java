@@ -24,7 +24,15 @@ class UserTest {
 
     @Test
     void builder() {
-        user.builder().weight(70).build();
+//        user.weight = 70;
+        user = user.builder()
+                .weight(70)
+                .age(user.getAge())
+                .first_name(user.getFirst_name())
+                .last_name(user.getLast_name())
+                .educations(user.getEducations())
+                .gender(user.getGender())
+                .build();
         assertEquals("User(first_name=Oles," +
                 " last_name=Dobosevych," +
                 " educations=[UCU, UCU bachelor]," +
